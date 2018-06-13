@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install -y usb-modeswitch gammu ppp wvdial
+sudo apt-get install -y usb-modeswitch gammu ppp wvdial tcpdump
 sudo apt-get purge --auto-remove -y wolfram-engine
 sudo apt-get clean
 mkdir -p $HOME/.nvm
@@ -8,5 +8,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm install node
-sudo mv wvdial.conf /etc/wvdial.conf
-sudo mv .gammurc ~/.gammurc
+echo Copying config files ...
+sudo cp wvdial.conf /etc/wvdial.conf
+sudo cp .gammurc ~/.gammurc
