@@ -5,3 +5,6 @@ sudo apt-get clean
 echo Copying config files ...
 sudo cp wvdial.conf /etc/wvdial.conf
 sudo cp .gammurc ~/.gammurc
+pip install requests configparser
+bash setup.sh
+
