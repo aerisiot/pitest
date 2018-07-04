@@ -27,8 +27,9 @@ for p in ports:
     if out == '':
         print(device + ': no response')
     else:
-        print(device + '\n' + out)
+        print(device + ': OK!\n')
         if out.find('IMEI') != -1:
+	    print(out)
             gammurc.write('[gammu]\n')
             gammurc.write('port = ' + device + '\n')
             gammurc.write('connection = at115200\n')

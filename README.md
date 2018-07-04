@@ -2,8 +2,9 @@
 
 ## Setup
 
-`./install.sh`
+After cloning the repository, connect a USB modem before running `./install.sh`.
 
 ## Documentation
 
-https://aeriscom.jira.com/wiki/spaces/EPD/pages/541132158/PiTest+Guide
+https://aeriscom.jira.com/wiki/spaces/OC/pages/519997647/PiTest+Pi+Connectivity+Test+Devices
+
